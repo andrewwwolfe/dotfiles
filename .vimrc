@@ -98,3 +98,4 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
+let delimitMate_expand_cr = 1
