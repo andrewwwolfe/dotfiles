@@ -87,9 +87,14 @@ set scrolloff=3
 set showcmd
 set smartcase
 set backspace=indent,eol,start
+
 let mapleader = ','
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>t :ConqueTermSplit zsh<CR>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
