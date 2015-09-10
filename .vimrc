@@ -22,6 +22,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'gregsexton/MatchTag'
+Plugin 'rbgrouleff/bclose.vim'
 " Python
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tell-k/vim-autopep8'
