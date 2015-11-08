@@ -8,6 +8,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-surround'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-commentary'
 Plugin 'scrooloose/nerdtree'
@@ -16,12 +17,13 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'scrooloose/syntastic'
 Plugin 'rosenfeld/conque-term'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'bling/vim-airline'
 Plugin 'elzr/vim-json'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'gregsexton/MatchTag'
+
 " Python
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tell-k/vim-autopep8'
