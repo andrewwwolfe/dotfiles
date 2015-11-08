@@ -54,9 +54,6 @@ augroup vimrc_autocmds
     autocmd FileType python set nowrap
     augroup END
 
-" Powerline setup
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
-set laststatus=2
 
 filetype plugin indent on
 syntax enable
