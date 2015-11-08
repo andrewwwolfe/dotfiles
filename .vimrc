@@ -23,6 +23,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'gregsexton/MatchTag'
+Plugin 'rbgrouleff/bclose.vim'
 
 " Python
 Plugin 'davidhalter/jedi-vim'
@@ -93,6 +94,7 @@ set backspace=indent,eol,start
 let mapleader = ','
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>t :ConqueTermSplit zsh<CR>
+nnoremap <leader>c :Bclose<CR>
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
