@@ -26,6 +26,7 @@ Plugin 'gregsexton/MatchTag'
 Plugin 'rbgrouleff/bclose.vim'
 
 " Python
+Plugin 'klen/python-mode'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tell-k/vim-autopep8'
 
