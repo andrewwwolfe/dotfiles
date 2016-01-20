@@ -8,6 +8,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-commentary'
@@ -28,6 +29,8 @@ Plugin 'rbgrouleff/bclose.vim'
 " Python
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tell-k/vim-autopep8'
+Plugin 'vim-scripts/indentpython.vim'
+
 
 " Coffeescript
 Plugin 'kchmck/vim-coffee-script'
@@ -46,16 +49,8 @@ Plugin 'jelera/vim-javascript-syntax'
 
 call vundle#end()
 
-augroup vimrc_autocmds
-    autocmd!
-    " highlight characters past column 120
-    autocmd FileType python highlight Excess ctermbg=DarkGrey guibg=Black
-    autocmd FileType python match Excess /\%120v.*/
-    autocmd FileType python set nowrap
-    augroup END
-
-
 filetype plugin indent on
+let python_highlight_all = 1
 syntax enable
 set background=dark
 colorscheme solarized
