@@ -30,6 +30,9 @@ Plugin 'rbgrouleff/bclose.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'alfredodeza/pytest.vim'
+Plugin 'lambdalisue/vim-pyenv.git'
+Plugin 'Glench/Vim-Jinja2-Syntax'
 
 
 " Coffeescript
@@ -87,6 +90,7 @@ let mapleader = ','
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>t :ConqueTermSplit zsh<CR>
 nnoremap <leader>c :Bclose<CR>
+nnoremap <leader>t :Pytest method verbose<CR>
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
@@ -95,6 +99,33 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Easy Mtion
+
+map  <Leader>fsyMotion_do_mapping = 0 " Disable default mappings
+
+" Bi-directional find motion
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-s)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-s2)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+nmap f <Plug>(easymotion-overwin-f)
+nmap s <Plug>(easymotion-overwin-f2)
+map L <Plug>(easymotion-bd-jk)
+nmap L <Plug>(easymotion-overwin-line)
+map  w <Plug>(easymotion-bd-w)
+nmap w <Plug>(easymotion-overwin-w)
 
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
@@ -105,3 +136,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
 let delimitMate_expand_cr = 1
+
+if has('python3')
+    let g:loaded_youcompleteme = 1 " disables loading it! doesnt support python3
+    let g:jedi#force_py_version = 3
+    let g:pymode_python = 'python3'
+endif
