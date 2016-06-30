@@ -53,6 +53,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'claco/jasmine.vim'
 Plugin 'burnettk/vim-angular'
+Plugin 'moll/vim-node'
 
 call vundle#end()
 
