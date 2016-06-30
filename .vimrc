@@ -44,8 +44,15 @@ Plugin 'slim-template/vim-slim.git'
 " Stylus
 Plugin 'wavded/vim-stylus'
 
+" HTML
+Plugin 'othree/html5-syntax.vim'
+Plugin 'othree/html5.vim'
+
 " CSS
 Plugin 'JulesWang/css.vim'
+
+" Less
+Plugin 'groenewege/vim-less'
 
 " Javascript
 Plugin 'jelera/vim-javascript-syntax'
