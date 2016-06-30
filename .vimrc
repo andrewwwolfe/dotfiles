@@ -49,6 +49,10 @@ Plugin 'JulesWang/css.vim'
 
 " Javascript
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'ternjs/tern_for_vim'
+Plugin 'claco/jasmine.vim'
+Plugin 'burnettk/vim-angular'
 
 call vundle#end()
 
@@ -136,6 +140,12 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
 let delimitMate_expand_cr = 1
+"enable keyboard shortcuts
+let g:tern_map_keys=1
+""show argument hints
+let g:tern_show_argument_hints='on_hold'
+let g:used_javascript_libs = 'underscore,angularjs,angularui'
+
 
 if has('python3')
     let g:loaded_youcompleteme = 1 " disables loading it! doesnt support python3
