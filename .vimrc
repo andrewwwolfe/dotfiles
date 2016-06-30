@@ -34,6 +34,9 @@ Plugin 'alfredodeza/pytest.vim'
 Plugin 'lambdalisue/vim-pyenv.git'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 
+" TypeScript
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 
 " Coffeescript
 Plugin 'kchmck/vim-coffee-script'
