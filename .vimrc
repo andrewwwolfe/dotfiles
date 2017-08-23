@@ -85,8 +85,6 @@ set title
 set nobackup
 set pastetoggle=<F2>
 set noswapfile
-set nobackup
-set noswapfile
 set expandtab
 set autoread
 set encoding=utf-8
